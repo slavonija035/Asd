@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pitanje za Katarinu</title>
+ 
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f5f5f5;
+text-align: center;
+margin-top: 120px;
+}
+ 
+h1 {
+color: #333;
+margin-bottom: 40px;
+padding: 0 20px;
+}
+ 
+.buttons {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+ 
+button {
+width: 350px;
+padding: 15px;
+font-size: 20px;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+background-color: #0078d4;
+color: white;
+transition: 0.3s;
+}
+ 
+button:hover {
+background-color: #005ea6;
+transform: scale(1.03);
+}
+</style>
+</head>
+ 
+<body>
+ 
+<h1>Katarina, je li ti dosadno ležati kod kuće?</h1>
+ 
+<div class="buttons">
+ 
+<button onclick="odgovor(1)">
+Odmor, ali sve me boli
+</button>
+ 
+<button onclick="odgovor(2)">
+Dobro je, živi se
+</button>
+ 
+<button onclick="odgovor(3)">
+Dosadno je, ali što da radim
+</button>
+ 
+</div>
+ 
+<script>
+ 
+function odgovor(opcija){
+ 
+let odabir = "";
+let poruka = "";
+ 
+if(opcija === 1){
+odabir = "Odmor, ali sve me boli 😅";
+poruka = "Samo polako. Svaki dan je mali korak prema oporavku. Odmaraj i slušaj svoje tijelo. 😊";
+}
+ 
+if(opcija === 2){
+odabir = "Dobro je, živi se 😎";
+poruka = "Odlično! Takav stav treba imati. Nasmiješi se i iskoristi dan najbolje što možeš. ☀️";
+}
+ 
+if(opcija === 3){
+odabir = "Dosadno je, ali što da radim 🙄";
+poruka = "Ponekad su najdosadniji dani upravo oni nakon kojih dođu najzanimljiviji. Izdrži još malo! 😊";
+}
+ 
+alert(poruka);
+ 
+document.body.innerHTML = `
+<h1 style="margin-top:180px;">Hvala na odgovoru!</h1>
+<p style="font-size:26px;">
+Odabrala si: <strong>${odabir}</strong>
+</p>
+<p style="font-size:22px; color:#555;">
+Želim ti ugodan ostatak dana. 🙂
+</p>
+`;
+}
+ 
+</script>
+ 
+</body>
+</html>
