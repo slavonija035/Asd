@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kako ste danas?</title>
+ 
+<style>
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #74ebd5, #9face6);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+ 
+.container {
+text-align: center;
+background: white;
+padding: 40px;
+border-radius: 20px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+max-width: 500px;
+}
+ 
+h1 {
+color: #333;
+margin-bottom: 30px;
+}
+ 
+button {
+display: block;
+width: 100%;
+margin: 12px 0;
+padding: 15px;
+font-size: 18px;
+border: none;
+border-radius: 12px;
+cursor: pointer;
+transition: 0.3s;
+}
+ 
+button:hover {
+transform: scale(1.05);
+}
+ 
+.btn1 { background-color: #4CAF50; color: white; }
+.btn2 { background-color: #2196F3; color: white; }
+.btn3 { background-color: #FF9800; color: white; }
+</style>
+</head>
+ 
+<body>
+<div class="container">
+<h1>Kako ste danas?</h1>
+ 
+<button class="btn1" onclick="prikaziPoruku(1)">
+Odlično, pun/a sam energije!
+</button>
+ 
+<button class="btn2" onclick="prikaziPoruku(2)">
+Nije loše, ide nekako.
+</button>
+ 
+<button class="btn3" onclick="prikaziPoruku(3)">
+Iskreno, nije baš moj dan.
+</button>
+</div>
+ 
+<script>
+function prikaziPoruku(opcija) {
+ 
+if(opcija === 1) {
+alert("Sjajno! Iskoristite tu energiju i napravite nešto što će vas dodatno razveseliti. 😊");
+}
+ 
+if(opcija === 2) {
+alert("Svaki dan ne mora biti savršen. Važno je da idete naprijed korak po korak. 💪");
+}
+ 
+if(opcija === 3) {
+alert("Loši dani dođu i prođu. Budite blagi prema sebi, sutra je nova prilika. 🌟");
+}
+ 
+}
+</script>
+</body>
+</html>
