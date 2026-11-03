@@ -1,0 +1,34 @@
+<body>
+ 
+<div class="birthday-card" onclick="showPopup()">
+<h1>🎁 Klikni ovdje 🎁</h1>
+</div>
+ 
+<div class="popup" id="popup">
+<div class="popup-content">
+<h2>🎂 Sretan rođendan, Katarina!</h2>
+ 
+<p>
+Neka ti svaki novi dan života bude kao dobra rakija.<br>
+Što stariji, to bolji. 😉<br><br>
+ 
+Čuvaj se i uskoro se vrati potpuno zdrava! 😊
+</p>
+ 
+<button class="close-btn" onclick="closePopup()">
+Zatvori
+</button>
+</div>
+</div>
+ 
+<script>
+function showPopup() {
+document.getElementById("popup").style.display = "flex";
+}
+ 
+function closePopup() {
+document.getElementById("popup").style.display = "none";
+}
+</script>
+ 
+</body>
